@@ -12,10 +12,10 @@
 
 EEG data single-trial information (information associated with each trial/epoch will be contained in these .mat or .txt files; for creating design matrices; we'll discuss these eventually...)
 
-* ID_25_epochsAll_designMat.mat
-* ID_25_epochsAll_designMat.txt
-* ID_25_epochsClean_designMat.mat
-* ID_25_epochsClean_designMat.txt
+* ID_25_epochsAll_designMat.mat (in general, use this version)
+* ID_25_epochsAll_designMat.txt (same as the .mat above)
+* ID_25_epochsClean_designMat.mat (ignore this one)
+* ID_25_epochsClean_designMat.txt (ignore this one)
 
 ## Useful/relevant variable/column information in the design matrices
 
