@@ -34,7 +34,7 @@ EEG data single-trial information (information associated with each trial/epoch 
 
 * accDC: correct (0) vs. incorrect trials (1)
 
-# EEG time-domain dataset 
+## EEG time-domain dataset
 
 MATLAB/EEGLAB; data are in the EEG.data structure: 70x2560x868 matrix: channel_time_trial) (MNE python should read these...
 
