@@ -3,6 +3,7 @@
 ## EEG dataset information
 
 * Subject ID: ID_25
+* Raw data are available [here](https://www.dropbox.com/sh/g4rcelhy1mcok5t/AABhXFLr4hpQBTnYNO3XTLcAa?dl=0)
 * 70 channels/sensors
 * 868 trials/epochs/repetitions in the original data
 * Task: Simon conflict task
