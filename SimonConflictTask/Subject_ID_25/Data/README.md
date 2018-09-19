@@ -1,6 +1,6 @@
-## README
+## Simon Conflict Task (Subject ID_25)
 
-EEG dataset information
+## EEG dataset information
 
 * Subject ID: ID_25
 * 70 channels/sensors
@@ -16,9 +16,7 @@ EEG data single-trial information (information associated with each trial/epoch 
 * ID_25_epochsClean_designMat.mat
 * ID_25_epochsClean_designMat.txt
 
-
-
-Useful/relevant variable/column information in the design matrices
+## Useful/relevant variable/column information in the design matrices
 
 * epochN: epoch/trial/repetition number
 
@@ -36,15 +34,16 @@ Useful/relevant variable/column information in the design matrices
 
 * accDC: correct (0) vs. incorrect trials (1)
 
+# EEG time-domain dataset 
 
-EEG time-domain dataset (MATLAB/EEGLAB; data are in the EEG.data structure: 70x2560x868 matrix: channel_time_trial) (MNE python should read these... )
+MATLAB/EEGLAB; data are in the EEG.data structure: 70x2560x868 matrix: channel_time_trial) (MNE python should read these...
 
 * ID_25_epochsAll.fdt
 * ID_25_epochsAll.set
 
 
 
-EEG time-frequency dataset (MATLAB) (scipy.io should read .mat files)
+## EEG time-frequency dataset (MATLAB) (scipy.io should read .mat files)
 
 * ID_25_singleTrials.mat
   * contains 4D matrix with fourier coefficients (complex numbers)
