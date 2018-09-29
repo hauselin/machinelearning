@@ -12,7 +12,7 @@
 
 ## Design matrices
 
-All subjects' design matrices are available [here](https://www.dropbox.com/sh/lcuchtk85z154pl/AABzHKYZLv6tKjM3RJb9UBKPa?dl=0)
+All subjects' design matrices are available [here](https://www.dropbox.com/sh/lcuchtk85z154pl/AABzHKYZLv6tKjM3RJb9UBKPa?dl=0). Use _epochsAll_designMat.mat, not _epochsClean_designMat.mat
 
 When analysing data, include only these epochs/trials:
 
