@@ -180,6 +180,7 @@ scores.shape
 scores
 plot_scores(epochs_subset.times, scores, 'AUC', 'Decoding congruency (logistic regression)', chance=.5)
 
+X.shape
 
 # TODO (1) turn into function; (2) save spatial filters/patterns; (3) use parallel loops
 n_permutes=100
@@ -192,16 +193,26 @@ for p in range(0, n_permutes):
     np.random.shuffle(y_shuffled)  # shuffle target
     _, scores_temp = decode(X, y_shuffled, LinearModel(LogisticRegression(C=1)), 'roc_auc', cv=10)  # cross validate
     scores_permuted[p,...] = scores_temp  # save results
+
 scores_permuted.shape
 scores_permuted_mean = np.mean(scores_permuted, axis=1)
+scores_permuted_mean.shape
 scores_permuted_mean = np.mean(scores_permuted_mean, axis=0)
 scores_permuted_mean.shape
-scores_permuted_sd = np.std(scores, axis=0)
+
+
+scores_permuted.shape
+scores_permuted_mean = np.mean(scores_permuted, axis=1)
+scores_permuted_mean.shape
+scores_permuted_sd = np.std(scores_permuted_mean, axis=0)
+
+scores_permuted_sd.shape
+
 scores_permuted_z = (np.mean(scores, axis=0) - scores_permuted_mean) / scores_permuted_sd
 
 plot_scores(epochs_subset.times, scores_permuted[3,...], 'AUC', 'Decoding congruency (logistic regression)', chance=.5)
 plot_scores(epochs_subset.times, scores_permuted_mean, 'AUC', 'Decoding congruency (logistic regression)', chance=.5)
-plot_scores(epochs_subset.times, scores_permuted_z, 'Permuted z scores (AUC)', 'Decoding congruency (logistic regression)', chance=0.1)
+plot_scores(epochs_subset.times, scores_permuted_z, 'Permuted z scores (AUC)', 'Decoding congruency (logistic regression)', chance=0)
 
 # prepare a series of classifier applied at each time sample
 clf = make_pipeline(StandardScaler(), LinearModel(LogisticRegression(C=1)))
